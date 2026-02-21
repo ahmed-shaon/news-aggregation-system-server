@@ -1,0 +1,39 @@
+# root-level ignores for the monorepo
+
+# dependencies
+node_modules/
+
+# environment files (keep secrets out of git)
+.env
+# ignore all other env variants but allow example file
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.cursor
+
+# client build output
+client/dist/
+client/dist-ssr/
+
+# server build output (none by default but safe)
+server/dist/
+
+# VS Code workspace settings
+.vscode/
+
+# optional lockfiles for other package managers
+package-lock.json
+npm-shrinkwrap.json
+
+# generated files
+coverage/
+
